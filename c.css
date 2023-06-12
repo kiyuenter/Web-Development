@@ -1,0 +1,182 @@
+/* Reset styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+	font-family: Arial, sans-serif;
+	color: #333;
+	line-height: 1.5;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+button {
+	background-color: #0077FF;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #0066CC;
+}
+
+/* Header styles*/
+header {
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+	z-index: 999;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.logo a {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.nav-links {
+	display: none;
+	list-style: none;
+}
+
+.nav-links li {
+	margin-right: 20px;
+}
+
+.burger {
+	display: block;
+	cursor: pointer;
+}
+
+.line1, .line2, .line3 {
+	width: 25px;
+	height: 3px;
+	background-color: #333;
+	margin: 5px;
+	transition: all 0.3s ease;
+}
+
+/* Main styles */
+.hero {
+	background-image: url('https://dummyimage.com/1200x600/ccc/000');
+	background-size: cover;
+	background-position: center;
+	height: 600px;
+	display: flex;
+	align-items: center;
+}
+
+.hero-text {
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.hero h1 {
+	font-size: 3rem;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.hero p {
+	font-size: 1.5rem;
+	margin-bottom: 40px;
+}
+
+.button {
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.about-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 80px 20px;
+}
+
+.about-image img {
+	max-width: 100%;
+}
+
+.services-container {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 80px 20px;
+}
+
+.service {
+	flex-basis: 25%;
+	padding: 20px;
+	text-align: center;
+}
+
+.service h3 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+/* Contact styles */
+form {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 80px 20px;
+}
+
+form label {
+	display: block;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+form input, form textarea {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: none;
+	border-radius: 5px;
+}
+
+form button {
+	display: block;
+	margin: 0 auto;
+}
+
+/* Footer styles */
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+}
+
+footer p {
+	font-size: 1.2rem;
+}
