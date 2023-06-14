@@ -83,6 +83,7 @@ a{
     justify-content: center;
     align-items: center;
     display: flex;
+    background-color: #c2c1c01f;
 }
 
 .promo{
@@ -96,7 +97,7 @@ a{
 
 .img-set{
     width: 100%;
-    height: 100px;
+    height: 110px;
     display: flex;
     justify-content: center;
     background-color: rgba(19, 179, 104, 0.884);
@@ -104,17 +105,13 @@ a{
     border-radius: 40px;
     padding-bottom: 10px;
 }
-.promo img{
-    display: flex;
-    width: 30px;
-    height: 30px;
-    margin-top: 10px;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
+.img-set img{
+    display: inline;
+    width: 100px;
+    height: 100px;
+    background-color: white;
     border-radius: 50%;
     border: 5px rgb(6, 109, 194) solid;
-    padding: 20px;
 }
 .promo-1{
     padding: 10px 10px 10px 10px;
@@ -130,6 +127,108 @@ a{
     margin-bottom: 20px;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+/* create underline for heading */
+.underline{
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+.underline::after{
+    content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  top: 18px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff5f02;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.underline:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.promo-underline{
+    margin-top: 15px;
+    height: 3px;
+    border: none;
+    background-color: rgb(6, 109, 194);
+}
+
+/*--------Creat hover effect for products----------*/
+.promo-1:hover{
+    padding: 10px 10px 10px 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 180px;
+    box-shadow: 0px 20px 50px 10px;
+    border: white solid 3px;
+    border-radius: 0px;
+    transition: 0.5s;
+}
+
+/*-----------create for store content---------------*/
+
+.store-content{
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.cosmo{
+    display: flex;
+    justify-content: space-between;
+}
+.part-1 p{
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+/*-----store collection list ------*/
+.col{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.store-collection{
+    background-color: rgba(255, 255, 255, 0.541);
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.col-1{
+    margin: 30px;
+    box-shadow: 1px 1px 300px 2px rgba(3, 130, 235, 0.507);
+    padding: 10px;
+}
+.col-1 img{
+    border: #ff5f02 solid;
+}
+
+/*------ Edit add to chart button -------*/
+.button{
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(45, 214, 45);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+}
+.button:hover{
+    scale: 105%;
+    transition: 0.5s;
+    background-color:#ff5f02;
 }
 
 
