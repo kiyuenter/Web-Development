@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
 }
 body{
-    font-family: Arial, sans-serif;
+    font-family: 'Exo 2', sans-serif;
     font-size: 16px;
 }
 .container{
@@ -20,7 +23,7 @@ body{
     width:100%;
     display: flex;
     justify-content: space-between;
-    background-color: rgba(0, 19, 73, 0.884);
+    background-color: rgba(19, 179, 104, 0.884);
     padding: 10px 0px 10px 0px;
 }
 .header, .nav, .log{
@@ -38,6 +41,7 @@ a{
     text-decoration: none;
     color: white;
 }
+
 .log ul li{
     list-style: none;
     display: inline-block;
@@ -84,39 +88,41 @@ a{
 .promo{
     margin-top: 20px;
     width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 180px;
+    margin-right: 180px;
     display: flex;
     justify-content: space-between;
 }
 
 .img-set{
     width: 100%;
+    height: 100px;
     display: flex;
     justify-content: center;
-    background-color: rgb(8, 172, 184);
+    background-color: rgba(19, 179, 104, 0.884);
     padding-top: 10px;
     border-radius: 40px;
     padding-bottom: 10px;
 }
 .promo img{
     display: flex;
-    width: 50%;
-    height: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
     justify-content: center;
     align-items: center;
     background-color: #fff;
     border-radius: 50%;
-    border-color:green transparent;
-    padding: 10px;
+    border: 5px rgb(6, 109, 194) solid;
+    padding: 20px;
 }
 .promo-1{
     padding: 10px 10px 10px 10px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 200px;
-    box-shadow: 5px 5px 50px 4px;
+    width: 180px;
+    box-shadow: 0px 5px 20px 1px;
     border-radius: 40px;
 }
 .promo-1 p{
