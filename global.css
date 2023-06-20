@@ -85,6 +85,12 @@ a{
     display: flex;
     background-color: #c2c1c01f;
 }
+.from-text{
+    text-align: center; 
+    font-size: 50px;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
 
 .promo{
     margin-top: 20px;
@@ -234,6 +240,15 @@ a{
 
 @media only screen and (max-width: 900px) {
 
+    .container{
+        width: 100%;
+        height: 100vh;
+        display: block;
+        margin: auto;
+        background-image: url(pharmacy_bg.png);
+        background-size: initial;
+    }
+
     .navigation{
         width: 100%;
         display: flex;
@@ -280,6 +295,69 @@ a{
     }
     .title{
         height: 30%;
+    }
+/*-------------- Promotion ------------------*/
+
+.from-text{
+    text-align: center; 
+    font-size: 35px;
+     margin-top: 20px; 
+    margin-bottom: 20px;
+}
+    .promo{
+        margin-top: 20px;
+        width: 100%;
+        display:block;
+        margin-left: 0;
+        margin-right: 0;
+        border: none;
+    }
+    .promo-1{
+        width: 100%;
+        margin: 20px;
+        height: 300px;
+    }
+    .promo-1:hover{
+        display: none;
+    }
+    .img-set{
+        width: 100%;
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(19, 179, 104, 0.884);
+        padding-top: 10px
+        padding-bottom: 10px;
+    }
+    .img-set img{
+        display: inline;
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        border-radius: 50%;
+        border: 5px rgb(6, 109, 194) solid;
+    }
+    .promo-1 p{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    /*------------STORE CONETENT------------*/
+    .col{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .store-collection{
+        background-color: rgba(255, 255, 255, 0.541);
+        margin-top: 20px;
+        width: 90%;
+        display: block;
+        justify-content: space-between;
+        text-align: center;
     }
   }
 
