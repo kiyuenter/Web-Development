@@ -41,6 +41,9 @@ a{
     text-decoration: none;
     color: white;
 }
+.search{
+    cursor: pointer;
+}
 
 .log ul li{
     list-style: none;
@@ -235,33 +238,115 @@ a{
     scale: 105%;
     transition: 0.5s;
     background-color:#ff5f02;
+    
 }
 
+/*--------- Footer -----------*/
+.main{
 
+}
+.footer-content{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.footer-content-1{
+    width: 80%;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.footer{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ft{
+    width: 80%;
+}
+.hr{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.ft-li ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.ft-li{
+    margin-right: -10px;
+    margin-top: 10px;
+}
+.subscribe{
+    border-left: 2px solid #747474;
+}
+.subscribe ul li{
+    list-style-type: none;
+    padding-left: 10px;
+}
+.sub-1{
+    font-size: 25px;
+    color: rgb(6, 109, 194);
+    margin-bottom: 10px;
+}
+.sub-2{
+    font-size: 18px;
+}
+.sub-3 input{
+    margin-top: 20px;
+    font-size: 16px;
+    height: 30px;
+    padding-left: 5px;
+}
+.sub-5{
+    border-radius: 10px 0;
+    border: 2px solid rgb(6, 109, 194);
+
+}
+.sub-4{
+    width: 100px;
+    background-color: rgb(6, 109, 194);
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    border: none;
+}
+.sub-4:hover{
+    background-color: #ff5f02;
+    scale: 105%;
+    transition: 1s;
+}
 @media only screen and (max-width: 900px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
 
     .container{
         width: 100%;
-        height: 100vh;
         display: block;
-        margin: auto;
         background-image: url(pharmacy_bg.png);
-        background-size: initial;
+        background-size:contain;
+        background-repeat: repeat;
     }
 
     .navigation{
         width: 100%;
         display: flex;
-        height: 60px !important;
+        height: 55px !important;
     }
     .header, .log{
         margin-top: 0;
         display: flex;
         width: 100%;
         }
-        .log{
-            padding-right: 0px;
-        }
+    .log{
+        padding-right: 0px;
+    }
     .header img, .log img{
         width: 20px;
         height: 20px;
@@ -279,54 +364,63 @@ a{
         position: absolute;
     }
     
-    .container{
-        display: block;
-        width: 100%;
-        background-position: center;
-        background-size: cover;
-        
-    }
     .title h1{
-        margin-top: -45px;
+
         font-size: 25px;
     }
     .title p{
         font-size: 14px;
     }
     .title{
-        height: 30%;
+        margin-top: 0;
+        border-radius: 0;
     }
 /*-------------- Promotion ------------------*/
+.container-2{
+    width: 100%;
+}
 
 .from-text{
     text-align: center; 
     font-size: 35px;
-     margin-top: 20px; 
-    margin-bottom: 20px;
+    width: 100%;
 }
     .promo{
         margin-top: 20px;
         width: 100%;
         display:block;
-        margin-left: 0;
-        margin-right: 0;
-        border: none;
+        margin: 0;
     }
     .promo-1{
         width: 100%;
-        margin: 20px;
+        margin-top:20px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
         height: 300px;
+        border: none;
+        border-radius: 0%;
     }
     .promo-1:hover{
+        overflow: hidden;
         display: none;
+        border: none;
     }
     .img-set{
+        border-radius: 0%;
         width: 100%;
         height: 110px;
+        margin: 0;
+        padding: 0;
         display: flex;
+        border: none;
         justify-content: center;
         background-color: rgba(19, 179, 104, 0.884);
-        padding-top: 10px
+        padding-top: 10px;
         padding-bottom: 10px;
     }
     .img-set img{
@@ -335,29 +429,36 @@ a{
         height: 100px;
         background-color: white;
         border-radius: 50%;
+        margin: 0px;
         border: 5px rgb(6, 109, 194) solid;
     }
     .promo-1 p{
         margin-top: 20px;
         margin-bottom: 20px;
-        margin-left: 5px;
-        margin-right: 5px;
     }
 
     /*------------STORE CONETENT------------*/
     .col{
         width: 100%;
         display: flex;
+        margin:0;
         align-items: center;
         justify-content: center;
     }
     .store-collection{
         background-color: rgba(255, 255, 255, 0.541);
         margin-top: 20px;
-        width: 90%;
+        width: 100%;
+        margin-left:0;
+        margin-right:0;
         display: block;
-        justify-content: space-between;
+        justify-content: center;
         text-align: center;
+    }
+    .col-1{
+        margin-left: 0;
+        margin-right: 0;
+        box-sizing: border-box;
     }
   }
 
